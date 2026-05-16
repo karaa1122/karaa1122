@@ -103,12 +103,7 @@ class BackendEngineer:
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=karaa1122&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffcc&icon_color=00ffcc&text_color=ffffff" height="180"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=karaa1122&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ffcc&text_color=ffffff" height="180"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=karaa1122&theme=tokyonight&hide_border=true&background=0d1117&ring=00ffcc&fire=00ffcc&currStreakLabel=00ffcc" alt="streak stats"/>
+  <img src="https://streak-stats.demolab.com/?user=karaa1122&theme=tokyonight&hide_border=true&background=0d1117&ring=00ffcc&fire=00ffcc&currStreakLabel=00ffcc" alt="streak stats"/>
 </div>
 
 ---
@@ -130,41 +125,6 @@ class BackendEngineer:
     <img alt="github contribution snake" src="https://raw.githubusercontent.com/karaa1122/karaa1122/output/github-snake-dark.svg"/>
   </picture>
 </div>
-
-<details>
-<summary>⚙️ How to enable the snake animation</summary>
-
-Create `.github/workflows/snake.yml` in your `karaa1122/karaa1122` profile repo:
-
-```yaml
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: karaa1122
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-Then go to **Settings → Actions → General → Workflow permissions** and enable **Read and write permissions**.
-
-</details>
 
 ---
 
