@@ -15,16 +15,6 @@
 
 ---
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/karaa1122/karaa1122/output/github-snake-dark.svg?v=1"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/karaa1122/karaa1122/output/github-snake.svg?v=1"/>
-    <img alt="github contribution snake" src="https://raw.githubusercontent.com/karaa1122/karaa1122/output/github-snake-dark.svg?v=1"/>
-  </picture>
-</div>
-
----
-
 ## 👨‍💻 About Me
 
 ```python
