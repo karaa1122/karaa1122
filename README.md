@@ -182,7 +182,7 @@ Different domains, same standard — *the system works, or it doesn't.*
 | `PORTFOLIO` | [karaa.my](https://karaa.my) |
 | `LINKEDIN` | [karaa-kamaran](https://www.linkedin.com/in/karaa-kamaran-246863284/) |
 | `WRITING` | [dev.to/karaa1122](https://dev.to/karaa1122) |
-| `LOCATION` | Erbil, Kurdistan, Iraq |
+| `LOCATION` | Erbil, Kurdistan |
 
 <br/>
 
