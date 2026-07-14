@@ -1,0 +1,109 @@
+<svg width="900" height="400" viewBox="0 0 900 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'DejaVu Sans Mono', Menlo, monospace; }
+    .h1 { font-size: 78px; font-weight: 700; letter-spacing: 2px; }
+    .name1 { fill: #f2f0ff; animation: up .8s ease backwards; animation-delay: .1s; }
+    .name2 { fill: url(#nameGrad); animation: up .8s ease backwards; animation-delay: .25s; }
+    .label { font-size: 13px; font-weight: 700; letter-spacing: 5px; fill: #fbbf24; animation: up .7s ease backwards; }
+    .tag { font-size: 16px; fill: #9a94b8; animation: up .7s ease backwards; animation-delay: .4s; }
+    .tag .strong { fill: #f2f0ff; font-weight: 700; }
+    .hud { font-size: 11px; fill: #55506e; letter-spacing: 1px; }
+    .hud .ok { fill: #34d399; }
+    .hud .v { fill: #a78bfa; }
+    .type { font-size: 14px; fill: #a78bfa; font-weight: 700; }
+    .dollar { font-size: 14px; fill: #fbbf24; font-weight: 700; }
+
+    .trace { stroke: #a78bfa; stroke-opacity: 0.14; stroke-width: 1.5; fill: none; }
+    .pulse { fill: #a78bfa; }
+    .pulse.amber { fill: #fbbf24; }
+    .p1 { animation: flow1 5s linear infinite; }
+    .p2 { animation: flow2 7s linear 1s infinite; }
+    .p3 { animation: flow3 6s linear 2.5s infinite; }
+    .pad { fill: none; stroke: #a78bfa; stroke-opacity: 0.3; stroke-width: 1.5; }
+    .padc { fill: #0b0a12; stroke: #fbbf24; stroke-opacity: .5; stroke-width: 1.5; animation: padPulse 3s ease-in-out infinite; }
+    .statusdot { fill: #34d399; animation: padPulse 2s ease-in-out infinite; }
+    .caret { fill: #fbbf24; animation: blink .9s step-end infinite; }
+    .baseline { stroke-dasharray: 900; stroke-dashoffset: 900; animation: dash 1.8s .4s cubic-bezier(.25,.46,.45,.94) forwards; }
+
+    /* three typed lines, each revealed by its own clip within a 12s cycle */
+    @keyframes up { from { transform: translateY(22px); } to { transform: translateY(0); } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes dash { to { stroke-dashoffset: 0; } }
+    @keyframes padPulse { 50% { opacity: .35; } }
+    @keyframes flow1 { 0% { transform: translate(0,0); opacity:0; } 5% { opacity:1; } 45% { transform: translate(210px,0); } 70% { transform: translate(210px,105px); opacity:1; } 75%,100% { transform: translate(210px,105px); opacity:0; } }
+    @keyframes flow2 { 0% { transform: translate(0,0); opacity:0; } 5% { opacity:1; } 50% { transform: translate(-150px,0); } 80% { transform: translate(-150px,-90px); opacity:1; } 85%,100% { transform: translate(-150px,-90px); opacity:0; } }
+    @keyframes flow3 { 0% { transform: translate(0,0); opacity:0; } 5% { opacity:1; } 60% { transform: translate(120px,0); } 90% { transform: translate(120px,60px); opacity:1; } 95%,100% { transform: translate(120px,60px); opacity:0; } }
+    @keyframes reveal1 { 0% { width: 0; } 8%, 30% { width: 460px; } 33%, 100% { width: 0; } }
+    @keyframes reveal2 { 0%, 33% { width: 0; } 41%, 63% { width: 460px; } 66%, 100% { width: 0; } }
+    @keyframes reveal3 { 0%, 66% { width: 0; } 74%, 97% { width: 460px; } 100% { width: 0; } }
+    .r1 { animation: reveal1 12s steps(40) infinite; }
+    .r2 { animation: reveal2 12s steps(40) infinite; }
+    .r3 { animation: reveal3 12s steps(40) infinite; }
+  </style>
+
+  <defs>
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#a78bfa" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame"><rect width="900" height="400" rx="14"/></clipPath>
+    <clipPath id="c1"><rect class="r1" x="86" y="330" height="22" width="460"/></clipPath>
+    <clipPath id="c2"><rect class="r2" x="86" y="330" height="22" width="0"/></clipPath>
+    <clipPath id="c3"><rect class="r3" x="86" y="330" height="22" width="0"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="900" height="400" fill="#0b0a12"/>
+    <rect width="900" height="400" fill="url(#grid)"/>
+
+    <!-- circuit traces, right side -->
+    <g>
+      <path class="trace" d="M600 80 H810 V185"/>
+      <path class="trace" d="M840 300 H690 V210"/>
+      <path class="trace" d="M640 150 H760 V210"/>
+      <path class="trace" d="M620 340 H720 V300"/>
+      <circle class="pad" cx="600" cy="80" r="5"/>
+      <circle class="padc" cx="810" cy="185" r="5"/>
+      <circle class="pad" cx="840" cy="300" r="5"/>
+      <circle class="padc" cx="690" cy="210" r="5"/>
+      <circle class="pad" cx="640" cy="150" r="5"/>
+      <circle class="padc" cx="620" cy="340" r="5"/>
+      <!-- traveling pulses -->
+      <circle class="pulse p1" cx="600" cy="80" r="3.5"/>
+      <circle class="pulse amber p2" cx="840" cy="300" r="3.5"/>
+      <circle class="pulse p3" cx="640" cy="150" r="3"/>
+    </g>
+
+    <!-- HUD corners -->
+    <text class="hud" x="64" y="44">sys.status: <tspan class="ok">● operational</tspan></text>
+    <text class="hud" x="836" y="44" text-anchor="end">uptime: <tspan class="v">99.99%</tspan></text>
+
+    <!-- eyebrow -->
+    <circle class="statusdot" cx="70" cy="112" r="4"/>
+    <text class="label" x="86" y="117">OPEN TO OPPORTUNITIES — ERBIL</text>
+
+    <!-- name -->
+    <text class="h1 name1" x="60" y="200">KARAA</text>
+    <text class="h1 name2" x="60" y="278">KAMARAN</text>
+
+    <!-- tagline -->
+    <text class="tag" x="64" y="312">backend engineer — <tspan class="strong">systems that hold under load</tspan></text>
+
+    <!-- typed line -->
+    <text class="dollar" x="64" y="347">$</text>
+    <g clip-path="url(#c1)"><text class="type" x="86" y="347">fintech · payments · card middleware</text></g>
+    <g clip-path="url(#c2)"><text class="type" x="86" y="347">kafka · rabbitmq · event-driven systems</text></g>
+    <g clip-path="url(#c3)"><text class="type" x="86" y="347">django · nestjs · spring boot</text></g>
+    <rect class="caret" x="428" y="334" width="9" height="16"/>
+
+    <!-- bottom line -->
+    <line class="baseline" x1="0" y1="398" x2="900" y2="398" stroke="url(#lineGrad)" stroke-width="3"/>
+  </g>
+</svg>

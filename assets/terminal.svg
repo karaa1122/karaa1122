@@ -1,0 +1,88 @@
+<svg width="900" height="330" viewBox="0 0 900 330" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'DejaVu Sans Mono', Menlo, monospace; font-size: 13px; }
+    .user { fill: #a78bfa; } .at { fill: #4a4560; } .host { fill: #fbbf24; }
+    .path { fill: #7dd3fc; } .cmd { fill: #f2f0ff; }
+    .ok { fill: #34d399; } .warn { fill: #fbbf24; } .info { fill: #7dd3fc; }
+    .dim { fill: #55506e; }
+    .title { font-size: 11px; fill: #4a4560; letter-spacing: 1px; }
+
+    .s { opacity: 0; }
+    .s1 { opacity: 1; animation: sess 24s linear infinite; }
+    .s2 { animation: sess 24s linear 8s infinite; }
+    .s3 { animation: sess 24s linear 16s infinite; }
+    @keyframes sess { 0%, 31% { opacity: 1; } 33.3%, 100% { opacity: 0; } }
+
+    .tb1 { animation: type 24s steps(30) infinite; }
+    .tb2 { animation: type 24s steps(30) 8s infinite; }
+    .tb3 { animation: type 24s steps(30) 16s infinite; }
+    @keyframes type { 0% { width: 0; } 5%, 100% { width: 640px; } }
+
+    .o { opacity: 0; }
+    .o1 { opacity: 1; animation: outfade 24s linear infinite; }
+    .o2 { animation: outfade 24s linear 8s infinite; }
+    .o3 { animation: outfade 24s linear 16s infinite; }
+    @keyframes outfade { 0%, 4.5% { opacity: 0; } 6.5%, 31% { opacity: 1; } 33.3%, 100% { opacity: 0; } }
+
+    .blink { fill: #fbbf24; animation: blink .85s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+
+  <defs>
+    <clipPath id="t1"><rect class="tb1" x="216" y="76" height="20" width="640"/></clipPath>
+    <clipPath id="t2"><rect class="tb2" x="216" y="76" height="20" width="0"/></clipPath>
+    <clipPath id="t3"><rect class="tb3" x="216" y="76" height="20" width="0"/></clipPath>
+  </defs>
+
+  <!-- window chrome -->
+  <rect width="900" height="330" rx="12" fill="#0b0a12" stroke="#242038" stroke-width="1"/>
+  <rect width="900" height="40" rx="12" fill="#13111d"/>
+  <rect y="28" width="900" height="12" fill="#13111d"/>
+  <circle cx="24" cy="20" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="20" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="20" r="6" fill="#28c840"/>
+  <text class="title" x="88" y="24">karaa@backend-01 ~ zsh</text>
+
+  <!-- shared prompt -->
+  <text x="24" y="90"><tspan class="user">karaa</tspan><tspan class="at">@</tspan><tspan class="host">backend-01</tspan><tspan class="at">:</tspan><tspan class="path">~</tspan><tspan class="warn"> $</tspan></text>
+
+  <!-- ═══ session 1: career ═══ -->
+  <g class="s s1">
+    <g clip-path="url(#t1)"><text class="cmd" x="218" y="90">cat /etc/career.conf</text></g>
+    <g class="o o1">
+      <text class="info" x="24" y="124">role       = Backend Engineer @ RIGT Company</text>
+      <text class="info" x="24" y="148">since      = 2023-06</text>
+      <text class="info" x="24" y="172">domains    = [fintech, payments, iot, e-commerce]</text>
+      <text class="info" x="24" y="196">education  = BSc Computer Science, Salahaddin University</text>
+      <text class="ok"   x="24" y="220"># parsed OK — no deprecated values found</text>
+    </g>
+  </g>
+
+  <!-- ═══ session 2: docker ═══ -->
+  <g class="s s2">
+    <g clip-path="url(#t2)"><text class="cmd" x="218" y="90">docker compose ps --status running</text></g>
+    <g class="o o2">
+      <text class="dim"  x="24" y="124">NAME            STATUS          PORTS</text>
+      <text class="ok"   x="24" y="148">api-gateway     Up 47 days      0.0.0.0:443</text>
+      <text class="ok"   x="24" y="172">ledger-svc      Up 47 days      internal</text>
+      <text class="ok"   x="24" y="196">kafka           Up 47 days      9092/tcp</text>
+      <text class="ok"   x="24" y="220">postgres        Up 47 days      5432/tcp  (healthy)</text>
+      <text class="warn" x="24" y="244">redis           Up 47 days      6379/tcp  (doing everything, as usual)</text>
+    </g>
+  </g>
+
+  <!-- ═══ session 3: git log ═══ -->
+  <g class="s s3">
+    <g clip-path="url(#t3)"><text class="cmd" x="218" y="90">git log --oneline -4</text></g>
+    <g class="o o3">
+      <text class="user" x="24" y="124">f4c1a2e  feat: transfer saga survives a kafka broker restart now</text>
+      <text class="user" x="24" y="148">9b0e77d  fix: double-spend window closed. it was 3 lines. it took 3 days.</text>
+      <text class="user" x="24" y="172">2ad5c91  perf: n+1 query removed — endpoint went from 2.1s to 40ms</text>
+      <text class="user" x="24" y="196">c0ffee1  docs: explained WHY, not what. you're welcome, future me.</text>
+    </g>
+  </g>
+
+  <!-- live cursor -->
+  <text x="24" y="290"><tspan class="user">karaa</tspan><tspan class="at">@</tspan><tspan class="host">backend-01</tspan><tspan class="at">:</tspan><tspan class="path">~</tspan><tspan class="warn"> $</tspan></text>
+  <rect class="blink" x="220" y="277" width="8" height="15"/>
+</svg>

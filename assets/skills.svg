@@ -1,0 +1,89 @@
+<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .label { font: 600 14px 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'DejaVu Sans Mono', Menlo, monospace; fill: #f2f0ff; }
+    .pct   { font: 700 13px 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'DejaVu Sans Mono', Menlo, monospace; fill: #fbbf24; }
+    .track { fill: #ffffff; fill-opacity: 0.06; }
+    .bar   { fill: url(#barGrad); animation: grow 1.8s cubic-bezier(.22,1,.36,1) backwards; transform-origin: left center; }
+    .shine { fill: url(#shineGrad); animation: sweep 3s ease-in-out infinite; }
+    .txt   { animation: fadeIn 1s ease backwards; }
+    .d1 { animation-delay: .10s; } .d2 { animation-delay: .25s; }
+    .d3 { animation-delay: .40s; } .d4 { animation-delay: .55s; }
+    .d5 { animation-delay: .70s; } .d6 { animation-delay: .85s; }
+    .d7 { animation-delay: 1.0s; } .d8 { animation-delay: 1.15s; }
+    .d9 { animation-delay: 1.3s; } .d10 { animation-delay: 1.45s; }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes fadeIn { from { opacity: .2; } to { opacity: 1; } }
+    @keyframes sweep { 0% { transform: translateX(-160px); } 60%, 100% { transform: translateX(760px); } }
+    .title { font: 800 20px 'JetBrains Mono', 'Cascadia Code', Consolas, 'DejaVu Sans Mono', monospace; fill: url(#barGrad); letter-spacing: 3px; }
+  </style>
+
+  <defs>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clipAll"><rect x="60" y="70" width="780" height="480" rx="6"/></clipPath>
+  </defs>
+
+  <rect width="900" height="560" rx="16" fill="#0b0a12"/>
+  <text class="title" x="60" y="46">⟨ SKILLS MATRIX ⟩</text>
+
+  <!-- Python · Django · DRF 95 -->
+  <g class="txt d1"><text class="label" x="60" y="98">Python · Django · DRF</text><text class="pct" x="800" y="98">95%</text></g>
+  <rect class="track" x="60" y="108" width="780" height="10" rx="5"/>
+  <rect class="bar d1" x="60" y="108" width="741" height="10" rx="5"/>
+
+  <!-- TypeScript · NestJS 90 -->
+  <g class="txt d2"><text class="label" x="60" y="146">TypeScript · NestJS</text><text class="pct" x="800" y="146">90%</text></g>
+  <rect class="track" x="60" y="156" width="780" height="10" rx="5"/>
+  <rect class="bar d2" x="60" y="156" width="702" height="10" rx="5"/>
+
+  <!-- PostgreSQL 90 -->
+  <g class="txt d3"><text class="label" x="60" y="194">PostgreSQL</text><text class="pct" x="800" y="194">90%</text></g>
+  <rect class="track" x="60" y="204" width="780" height="10" rx="5"/>
+  <rect class="bar d3" x="60" y="204" width="702" height="10" rx="5"/>
+
+  <!-- System Design · Microservices 90 -->
+  <g class="txt d4"><text class="label" x="60" y="242">System Design · Microservices</text><text class="pct" x="800" y="242">90%</text></g>
+  <rect class="track" x="60" y="252" width="780" height="10" rx="5"/>
+  <rect class="bar d4" x="60" y="252" width="702" height="10" rx="5"/>
+
+  <!-- Redis · Caching 85 -->
+  <g class="txt d5"><text class="label" x="60" y="290">Redis · Caching Strategies</text><text class="pct" x="800" y="290">85%</text></g>
+  <rect class="track" x="60" y="300" width="780" height="10" rx="5"/>
+  <rect class="bar d5" x="60" y="300" width="663" height="10" rx="5"/>
+
+  <!-- Kafka · RabbitMQ · Celery 85 -->
+  <g class="txt d6"><text class="label" x="60" y="338">Kafka · RabbitMQ · Celery</text><text class="pct" x="800" y="338">85%</text></g>
+  <rect class="track" x="60" y="348" width="780" height="10" rx="5"/>
+  <rect class="bar d6" x="60" y="348" width="663" height="10" rx="5"/>
+
+  <!-- Docker · CI/CD 85 -->
+  <g class="txt d7"><text class="label" x="60" y="386">Docker · CI/CD · GitHub Actions</text><text class="pct" x="800" y="386">85%</text></g>
+  <rect class="track" x="60" y="396" width="780" height="10" rx="5"/>
+  <rect class="bar d7" x="60" y="396" width="663" height="10" rx="5"/>
+
+  <!-- Java · Spring Boot 80 -->
+  <g class="txt d8"><text class="label" x="60" y="434">Java · Spring Boot</text><text class="pct" x="800" y="434">80%</text></g>
+  <rect class="track" x="60" y="444" width="780" height="10" rx="5"/>
+  <rect class="bar d8" x="60" y="444" width="624" height="10" rx="5"/>
+
+  <!-- Linux · Nginx 80 -->
+  <g class="txt d9"><text class="label" x="60" y="482">Linux · Nginx</text><text class="pct" x="800" y="482">80%</text></g>
+  <rect class="track" x="60" y="492" width="780" height="10" rx="5"/>
+  <rect class="bar d9" x="60" y="492" width="624" height="10" rx="5"/>
+
+  <!-- Elasticsearch 75 -->
+  <g class="txt d10"><text class="label" x="60" y="530">Elasticsearch · Full-Text Search</text><text class="pct" x="800" y="530">75%</text></g>
+  <rect class="track" x="60" y="540" width="780" height="10" rx="5"/>
+  <rect class="bar d10" x="60" y="540" width="585" height="10" rx="5"/>
+
+  <g clip-path="url(#clipAll)">
+    <rect class="shine" x="60" y="70" width="160" height="490" opacity="0.5"/>
+  </g>
+</svg>
