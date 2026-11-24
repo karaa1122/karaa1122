@@ -50,7 +50,7 @@
   <g class="s s1">
     <g clip-path="url(#t1)"><text class="cmd" x="218" y="90">cat /etc/career.conf</text></g>
     <g class="o o1">
-      <text class="info" x="24" y="124">role       = Backend Engineer @ RIGT Company</text>
+      <text class="info" x="24" y="124">role       = Senior Backend Developer @ RIGT Company</text>
       <text class="info" x="24" y="148">since      = 2023-06</text>
       <text class="info" x="24" y="172">domains    = [fintech, payments, iot, e-commerce]</text>
       <text class="info" x="24" y="196">education  = BSc Computer Science, Salahaddin University</text>

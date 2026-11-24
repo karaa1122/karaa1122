@@ -50,7 +50,7 @@
     <text class="date" x="134" y="86" fill="#a78bfa">JUN 2023 — PRESENT</text>
     <rect class="nowpill" x="310" y="73" width="44" height="17" rx="8.5"/>
     <text class="now" x="320" y="85">NOW</text>
-    <text class="role" x="134" y="112">Backend Engineer · RIGT Company</text>
+    <text class="role" x="134" y="112">Senior Backend Developer · RIGT Company</text>
     <text class="org"  x="134" y="134">Fintech infrastructure — card middleware, payment flows, ledger sync, digital goods</text>
     <text class="org"  x="134" y="152">Cardhouzz · Nasspay · Pay by Link</text>
   </g>

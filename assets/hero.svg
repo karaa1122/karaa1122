@@ -94,7 +94,7 @@
     <text class="h1 name2" x="60" y="278">KAMARAN</text>
 
     <!-- tagline -->
-    <text class="tag" x="64" y="312">backend engineer — <tspan class="strong">systems that hold under load</tspan></text>
+    <text class="tag" x="64" y="312">senior backend developer — <tspan class="strong">systems that hold under load</tspan></text>
 
     <!-- typed line -->
     <text class="dollar" x="64" y="347">$</text>

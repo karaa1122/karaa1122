@@ -6,7 +6,7 @@
 <br/>
 
 <div align="center">
-<a href="https://karaa.my"><img src="https://img.shields.io/badge/🌐_karaa.my-0b0a12?style=for-the-badge&color=a78bfa" alt="website"/></a>
+<a href="https://karaa.dev"><img src="https://img.shields.io/badge/🌐_karaa.dev-0b0a12?style=for-the-badge&color=a78bfa" alt="website"/></a>
 <a href="https://www.linkedin.com/in/karaa-kamaran-246863284/"><img src="https://img.shields.io/badge/LinkedIn-0b0a12?style=for-the-badge&logo=linkedin&logoColor=fbbf24" alt="LinkedIn"/></a>
 <a href="https://dev.to/karaa1122"><img src="https://img.shields.io/badge/Dev.to-0b0a12?style=for-the-badge&logo=devdotto&logoColor=f2f0ff" alt="Dev.to"/></a>
 <img src="https://komarev.com/ghpvc/?username=karaa1122&label=Profile+Views&color=a78bfa&style=for-the-badge" alt="profile views"/>
@@ -20,12 +20,12 @@
 > **Good software works at 3am without anyone watching.**
 
 ```python
-class BackendEngineer:
+class SeniorBackendDeveloper:
     name     = "Karaa Kamaran"
     location = "Erbil, Kurdistan"
-    role     = "Backend Engineer @ RIGT Company"      # June 2023 — present
+    role     = "Senior Backend Developer @ RIGT Company" # June 2023 — present
     degree   = "BSc Computer Science, Salahaddin University (2022)"
-    website  = "https://karaa.my"
+    website  = "https://karaa.dev"
 
     domains = ["Fintech", "Payments", "E-Commerce", "Industrial / IoT", "Platforms"]
 
@@ -179,7 +179,7 @@ Different domains, same standard — *the system works, or it doesn't.*
 | | |
 |---:|:---|
 | `EMAIL` | [karaa.kamaran@gmail.com](mailto:karaa.kamaran@gmail.com) |
-| `PORTFOLIO` | [karaa.my](https://karaa.my) |
+| `PORTFOLIO` | [karaa.dev](https://karaa.dev) |
 | `LINKEDIN` | [karaa-kamaran](https://www.linkedin.com/in/karaa-kamaran-246863284/) |
 | `WRITING` | [dev.to/karaa1122](https://dev.to/karaa1122) |
 | `LOCATION` | Erbil, Kurdistan |
